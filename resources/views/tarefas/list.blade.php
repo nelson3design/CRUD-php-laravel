@@ -8,6 +8,7 @@
 
 
                     <div class="table">
+                      
                     
                         <table>
         
@@ -26,6 +27,7 @@
                                     <td>{{$event->nome}}</td>
                                     <td>{{$event->email}}</td>
                                     <td>{{$event->idade}} anos</td>
+                                    
                                     <td>{{$event->telefone}}</td>
                                     <td>
                                        
@@ -55,6 +57,7 @@
 
                       
                     </div>
+                    
                 
   @endforeach
   @endsection

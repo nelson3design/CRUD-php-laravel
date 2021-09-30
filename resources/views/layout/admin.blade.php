@@ -129,6 +129,8 @@ td{
     width: 80px;
     margin-top: 20px;
     cursor: pointer;
+    background-color: red;
+    color:red;
 }
 
 .add{

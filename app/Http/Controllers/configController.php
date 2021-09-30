@@ -30,6 +30,7 @@ class configController extends Controller
     }
 
      public function addAction(Request $request){
+        
      $event = new Event;
      $event->nome =$request->nome;
      $event->email =$request->email;
@@ -57,5 +58,6 @@ class configController extends Controller
        Event::finOrFail($request->id)->done($request->all());
         return redirect('/')->with('msg3','Usuario editado com sucesso!');
     }
-    
+
+ 
 }

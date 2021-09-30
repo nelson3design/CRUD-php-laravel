@@ -102,11 +102,6 @@ td{
     width: 250px;
     
 }
-.gravar input{
-   
-    width: 250px;
-    
-}
 
 
 .gravar input{
@@ -123,6 +118,8 @@ td{
     width: 80px;
     margin-top: 20px;
     cursor: pointer;
+    
+    
 }
 
 .add{
