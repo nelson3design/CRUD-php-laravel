@@ -1,6 +1,6 @@
 @extends('layout.adminAdd')
 
-@section('title',)
+@section('title','Editar')
 
 @section('contentAdd')
 
