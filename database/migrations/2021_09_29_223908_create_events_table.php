@@ -17,9 +17,11 @@ class CreateEventsTable extends Migration
             $table->id();
             $table->string('nome',100);
             $table->string('email',100);
-            $table->integer('idade');
-            $table->integer('telefone');
+            $table->text('idade');
+            $table->text('telefone');
+            $table->year('year')->default('2021');
             $table->timestamps();
+            
         });
     }
 

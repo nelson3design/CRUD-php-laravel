@@ -18,7 +18,7 @@
                         <input type="text" class="addEmail" name="email">
         
                         <label for="addIdade">Data de Nacimento</label>
-                        <input type="number" class="addIdade" name="idade">
+                        <input type="date" class="addIdade" name="idade" >
         
                         <label for="addTel">Telefone</label>
                         <input type="tel" class="addTel" name="telefone">

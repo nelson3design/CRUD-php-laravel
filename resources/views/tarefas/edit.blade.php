@@ -7,22 +7,22 @@
 
 <div class="edit">
 
-                    <form action="/edit/{{ $event->id }}" method="GET" class="gravar">
+                    <form action="/update/{{ $event->id }}" method="POST" class="gravar">
                        @csrf
                        @method('PUT')
                         <label for="addNome">Nome</label>
-                        <input type="text" class="addNome" name="item[]">
+                        <input type="text" class="addNome" name="nome" value="{{$event->nome}}">
     
                         <label for="addEmail">Email</label>
-                        <input type="text" class="addEmail" name="intem[]">
+                        <input type="text" class="addEmail" name="email" value="{{$event->email}}">
     
                         <label for="addIdade">Data de Nacimento</label>
-                        <input type="number" class="addIdade" name="item[]">
+                        <input type="date" class="addIdade" name="idade" value="{{$event->idade}}">
     
                         <label for="addTel">Telefone</label>
-                        <input type="tel" class="addTel" name="item[]">
+                        <input type="tel" class="addTel" name="telefone" value="{{$event->telefone}}">
     
-                        <input type="submit" class="btngrava" name="gravar" value="Atualizar">
+                        <input type="submit" class="btngrava" name="" value="Atualizar">
                     </form>
                 </div>
 

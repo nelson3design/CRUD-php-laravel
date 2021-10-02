@@ -26,12 +26,14 @@
                                 <tr>
                                     <td>{{$event->nome}}</td>
                                     <td>{{$event->email}}</td>
-                                    <td>{{$event->idade}} anos</td>
+                                  
+                                     <td>{{$event->year-substr($event->idade,0,4)}} anos</td>
+
+                               
                                     
-                                    <td>{{$event->telefone}}</td>
+                                    <td>({{substr($event->telefone,0,2)}}) {{substr($event->telefone,2,5)}}-{{substr($event->telefone,7,5)}}</td>
                                     <td>
-                                       
-                                         
+                                      
                                          <div class="btnClick">
 
                                              <a href="edit/{{$event->id}}">

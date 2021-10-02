@@ -182,7 +182,7 @@ td{
                     @endif
 
                      <div class="event">
-                    @if(session('msg'))
+                    @if(session('msg3'))
                     <p class="e">{{session('msg3')}}</p>
                     @endif
 

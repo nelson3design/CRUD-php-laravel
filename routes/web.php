@@ -26,12 +26,12 @@ Route::prefix('/')->group(function(){
      Route::post('add','App\Http\Controllers\configController@addAction');
 
       Route::get('edit/{id}','App\Http\Controllers\configController@edit');
-     Route::post('add/{id}','App\Http\Controllers\configController@editAction');
+      Route::put('update/{id}','App\Http\Controllers\configController@update');
+    
      
 
        Route::get('/{id}','App\Http\Controllers\configController@del');
 
-         Route::put('edit/{id}','App\Http\Controllers\configController@done');
      
    
 });

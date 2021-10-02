@@ -35,27 +35,28 @@ class configController extends Controller
      $event->nome =$request->nome;
      $event->email =$request->email;
      $event->idade =$request->idade;
-     $event->telefone =$request->telefone;
+     $event->telefone =$request->input('telefone');
      $event->save();
      return redirect('/')->with('msg','Usuário adicionado com sucesso!');
     }
 
      public function edit($id){
          $event = Event::findOrFail($id);
+         $events = Event::all();
      return view('tarefas.edit',['event' =>$event]);
-     return redirect('/')->with('msg','Usuário editado com sucesso!');
+    
     }
 
-     public function editAction(){
-     
-    }
+    
      public function del($id){
        Event::findOrFail($id)->delete();
        return redirect('/')->with('msg2','Usuario excluido com sucesso!');
     }
 
-     public function done(Request $request){
-       Event::finOrFail($request->id)->done($request->all());
+     public function update(Request $request){
+        
+       Event::findOrFail($request->id)->update($request->all());
+
         return redirect('/')->with('msg3','Usuario editado com sucesso!');
     }
 
