@@ -21,7 +21,7 @@
                         <input type="date" class="addIdade" name="idade" >
         
                         <label for="addTel">Telefone</label>
-                        <input type="tel" class="addTel" name="telefone">
+                        <input type="tel" class="addTel" name="telefone" pattern="[0-9]{11}">
         
                         <input type="submit" class="btngrava" name="gravar" value="Gravar">
                     </form>
