@@ -24,15 +24,15 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>{{$event->nome}}</td>
-                                    <td>{{$event->email}}</td>
+                                    <td data-label="nome">{{$event->nome}}</td>
+                                    <td data-label="email">{{$event->email}}</td>
                                   
-                                     <td>{{$event->year-substr($event->idade,0,4)}} anos</td>
+                                     <td data-label="idade">{{$event->year-substr($event->idade,0,4)}} anos</td>
 
                                
                                     
-                                    <td>({{substr($event->telefone,0,2)}}) {{substr($event->telefone,2,5)}}-{{substr($event->telefone,7,5)}}</td>
-                                    <td>
+                                    <td data-label="telefone">({{substr($event->telefone,0,2)}}) {{substr($event->telefone,2,5)}}-{{substr($event->telefone,7,5)}}</td>
+                                    <td data-label="ações">
                                       
                                          <div class="btnClick">
 

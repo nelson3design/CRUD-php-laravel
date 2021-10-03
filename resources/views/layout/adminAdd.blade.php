@@ -19,16 +19,16 @@ section{
     width: 100vw;
     height: 100vh;
     position: relative;
+    display:grid;
+    place-items:center;
+    padding:20px 0;
 }
 .base{
     width: 800px;
     border: 2px solid black;
     height: auto;
      padding: 5px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
+    
 }
 
 .content{
@@ -125,6 +125,81 @@ td{
 .add{
     padding:0 10px;
 }
+
+@media(max-width: 992px){
+
+    section{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    
+}
+.base{
+    width: 90%;
+    border: 2px solid black;
+    height: auto;
+     padding: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+
+.content{
+   
+    width: 100%;
+    margin: 20px 0;
+}
+	.table thead{
+		display: none;
+	}
+
+	.table, .table tbody, .table tr, .table td{
+		display: block;
+		width: 100%;
+	}
+	.table tr{
+		margin-bottom:15px;
+       
+	}
+	.table td{
+		text-align: right;
+		padding-left: 50%;
+		text-align: right;
+		position: relative;
+        padding-right:15px;
+	}
+	.table td::before{
+		content: attr(data-label);
+		position: absolute;
+		left:0;
+		width: 50%;
+		padding-left:15px;
+		 font-size: 20px;
+        font-weight: 700;
+        text-transform: capitalize;
+		text-align: left;
+
+	}
+    .edit{
+        display: grid;
+        place-content: center;
+    }
+     .done{
+        display: grid;
+        place-content: center;
+    }
+
+    .title{
+        width: 100%;
+    }
+    h2{
+        display: grid;
+        place-content: center;
+    }
+}
+
     </style>
 </head>
 

@@ -50,14 +50,14 @@ class configController extends Controller
     
      public function del($id){
        Event::findOrFail($id)->delete();
-       return redirect('/')->with('msg2','Usuario excluido com sucesso!');
+       return redirect('/')->with('msg2','Usuário excluido com sucesso!');
     }
 
      public function update(Request $request){
         
        Event::findOrFail($request->id)->update($request->all());
 
-        return redirect('/')->with('msg3','Usuario editado com sucesso!');
+        return redirect('/')->with('msg3','Usuário editado com sucesso!');
     }
 
  

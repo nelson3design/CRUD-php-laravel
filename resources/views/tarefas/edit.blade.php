@@ -20,7 +20,7 @@
                         <input type="date" class="addIdade" name="idade" value="{{$event->idade}}">
     
                         <label for="addTel">Telefone</label>
-                        <input type="tel" class="addTel" name="telefone" value="({{substr($event->telefone,0,2)}}) {{substr($event->telefone,2,5)}}-{{substr($event->telefone,7,5)}}" pattern="[(0-9)]{2}[0-9]{5}[0-9]{4}">
+                        <input type="tel" class="addTel" name="telefone" value="({{substr($event->telefone,0,2)}}) {{substr($event->telefone,2,5)}}-{{substr($event->telefone,7,5)}}" >
     
                         <input type="submit" class="btngrava" name="" value="Atualizar">
                     </form>
